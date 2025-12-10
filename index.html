@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern UI Screen Switcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 左のボタン一覧 -->
+    <div class="sidebar">
+        <h2 class="logo">My App</h2>
+        <button onclick="showScreen(1)">画面1</button>
+        <button onclick="showScreen(2)">画面2</button>
+        <button onclick="showScreen(3)">画面3</button>
+        <button onclick="goToSchool()">学校HP</button>
+        <button class="return" onclick="goHome()">最初に戻る</button>
+    </div>
+
+    <!-- 右の内容表示領域 -->
+    <div class="content" id="content-area">
+        <h1>ようこそ</h1>
+        <p>左のメニューから画面を選んでください。</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

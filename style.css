@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f5f6fa;
+}
+
+/* 全体レイアウト */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* 左サイドバー */
+.sidebar {
+    width: 230px;
+    background: #111827;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+}
+
+/* アプリタイトル */
+.logo {
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ボタンスタイル */
+.sidebar button {
+    background: #1f2937;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar button:hover {
+    background: #374151;
+    transform: translateX(4px);
+}
+
+/* 戻るボタンだけアクセント */
+.sidebar .return {
+    background: #2563eb;
+}
+
+.sidebar .return:hover {
+    background: #1d4ed8;
+}
+
+/* メイン画面 */
+.content {
+    flex: 1;
+    padding: 40px;
+    background: white;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+}
+
+/* アニメーション効果 */
+.content img {
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    animation: fade 0.4s ease-in-out;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
